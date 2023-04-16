@@ -4,7 +4,11 @@ timeText = document.querySelector(".time b"),
 inputField = document.querySelector("input"),
 refreshBtn = document.querySelector(".refresh-word"),
 checkBtn = document.querySelector(".check-word");
+const isLogin = localStorage.getItem('username') !== null;
 
+if (isLogin) {
+  window.location.href = 'login.html';
+}
 let correctWord, timer, attemptsLeft = 5, correctAttempts = 0,noofattempts=0,accuracy=0;
 
 const initTimer = maxTime => {
