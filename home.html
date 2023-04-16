@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-image: linear-gradient(to left, white, lightblue);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(248, 244, 244);
+  background-image: url("a1.jpg");
+  background-size: cover;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: 400px;
+}
+
+.card {
+  margin-top: 20px;
+  background-image: url("a1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+.card1 {
+  margin-top: 20px;
+  background-image: url("a1.jpg");
+  background-size: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  background-image: url("a5.jpg");
+  margin-top: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Te-SoftSolvers</h1>
+  <p>Welcome To My Gaming Webpage. Hope You Will Enjoy Here.</p>
+</div>
+
+<div class="topnav">
+  <a href="https://www.microsoft.com/en-in/store/games/windows">Microsoft Store</a>
+  <a href="https://playstore.com">Play Store</a>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="logout.html" style="float:right">Logout</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h1>Game</h1>
+      <h3>Game of Mind</h3>
+      <div class="img1">
+        <a href="index.html">
+          <img src="scrable.jpg" alt="dice image" />
+        </a>
+      </div>
+      <h4>Soft Skills predictions</h4>
+    </div>
+  </div>
+  
+  <div class="rightcolumn">
+    <div class="card1">
+      <h2></h2>
+      <div style="height:40px;"></div>
+      <div id="userName">USERNAME -  Guest</div>
+    </div>
+    <script>
+
+      var userName = localStorage.getItem("username");
+      if(userName == null){
+        window.location.href = "login.html";
+      }
+      document.getElementById("userName").innerHTML = "USERNAME - " + userName;
+    </script>
+
+  </body>
+  </html>

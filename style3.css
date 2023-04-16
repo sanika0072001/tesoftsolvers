@@ -1,0 +1,40 @@
+#image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.image-box {
+  margin: 0 20px;
+}
+
+#answer-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#answer-container input[type=text] {
+  margin: 5px;
+  width: 50px;
+}
+
+#submit-button {
+  margin-top: 10px;
+}
+
+#result-container {
+  display: none;
+  margin-top: 50px;
+  text-align: center;
+}
+
+#percentage-bar {
+  margin-top: 20px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #ccc;
+}
+
+#play-again-button {
+  margin-top: 10px;
+}
